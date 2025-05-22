@@ -1,38 +1,106 @@
+
 *{
-    background-color: black;
+    /* outline: 2px solid red; */
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family:Arial, Helvetica, sans-serif,sans-serif;
 }
-.contain-main{
-    min-height:100vh;
+body{
+    background-color:black;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
+    font-family: "Roboto",Arial, Helvetica, sans-serif;
 }
-.container-main .section-1{
-    background: #1f2937;
+.sections{
+    height:300px;
+    padding:5px;
+}
+ #section1{
+    height:550px;
+    background-color:#1f2937;
+}
+/*header stuff*/
+#header{
+    margin: 0 auto;
+    display:flex; 
+    padding-bottom: 15px;
+    width:1000px;
+    height:fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+/* just to round and size the logo image */
+#face{
+    border-radius: 50%;
+    width:auto;
     height:100px;
-    flex: 1 1 auto;
 }
-.container-main .section-2, .section-4{
-    background: white;
-    height:100px;
-    flex: 1 1 auto;
+/**/
+#header-links{
+    height:fit-content;
+    display:flex;
+    gap:20px;
 }
-.container-main .section-3{
-    background: grey;
-    height:100px;
-    flex: 1 1 auto;
+ a,#comment{
+    font-size: 18px;
+    color:#E5E7EB;
+    text-decoration: none;
 }
-#footer{
-    background-color: #1f2937;
-    color: #e5e7eb;
-    text-align:center;
-    height:30px;
-    font-size: 10px;
-    display: flex;
-    justify-content: center; /* horizontal centering */
-     align-items: center;
+a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+/* new container for hero stuff so we can centre */
+#container-hero{
+    padding-top:50px;
+    display:flex;
+    width:1000px;
+    height:300px;
+    margin:0 auto;
+    gap:30px;
+}
+#hero-text #main-text{
+    font-size: 48px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color:#F9FAF8;
+}
+/* button i didnt use a traditional button because i wanted to link somewhere */
+.button-link{
+    padding: 5px 25px;
+    margin-top:10px;
+    border-radius: 5px;
+    color:#F9FAF8;
+    font-weight: 900;
+    font-size:18px;
+    display: inline-block;
+    background-color:#3882f6;
+    border:0;
+}
+#hero-text{
+    flex:1;
+}
+#hero-image img{
+    width: 600px;
+    height: 100%;
+    flex:1.5;
+    object-fit: cover;
+    object-position: 50% 8%;
 }
 
+
+/* start of section 2 */
+#section2{
+    background-color:white;
+}
+#section3{
+    background-color:grey;
+}
+#section4{
+    background-color:white;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: #1f2937;
+}
