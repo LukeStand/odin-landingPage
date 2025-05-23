@@ -1,9 +1,9 @@
 
 *{
-    /* outline: 2px solid red; */
     box-sizing: border-box;
     margin:0;
     padding:0;
+    
 }
 body{
     background-color:black;
@@ -12,11 +12,7 @@ body{
     font-family: "Roboto",Arial, Helvetica, sans-serif;
 }
 /* default to make editing smoother */
-.sections{
-    flex-grow:1;
-    height:300px;
-    padding:5px;
-}
+
  #section1{
     height:550px;
     background-color:#1f2937;
@@ -108,18 +104,52 @@ a:hover {
     gap: 50px;
     justify-content: center;
 }
-.info-image{
+.info-box{
+    display:flex;
+    flex-direction: column;
     width:175px;
-    height:175px;
+    height:250px;
     border-radius: 15px;
 }
+.info-box .info-image{
+    border-radius: 15px;
+    height:175px;
+}
+.info-box p{
+    text-align: center;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$ start of section 3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 #section3{
-    background-color:grey;
+    background-color:#E5E7EB;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    flex-direction: column;
+
+}
+#section3 #quote-text{
+    width: 1000px;;
+    font-size:36px;
+    color:#1f2937;
+    font-style: italic;
+    font-weight:lighter;
+}
+#section3 #author{
+    width:1000px;
+    text-align: right;
+    font-size: 36px;
+    color:#1f2937;
 }
 #section4{
     background-color:white;
 }
+#action-call{
+
+}
 footer{
+    padding:50px;
+    color:#F9FAF8;
     text-align: center;
     align-items: center;
     background-color: #1f2937;
