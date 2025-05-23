@@ -11,7 +11,9 @@ body{
     flex-direction:column;
     font-family: "Roboto",Arial, Helvetica, sans-serif;
 }
+/* default to make editing smoother */
 .sections{
+    flex-grow:1;
     height:300px;
     padding:5px;
 }
@@ -89,9 +91,27 @@ a:hover {
 }
 
 
-/* start of section 2 */
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ start of section 2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 #section2{
     background-color:white;
+    height:500px;
+}
+#info-header{
+    text-align: center;
+    font-size: 36px;
+    font-weight:900;
+    margin:50px;
+    color:#1f2937;
+}
+#container-images{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.info-image{
+    width:175px;
+    height:175px;
+    border-radius: 15px;
 }
 #section3{
     background-color:grey;
